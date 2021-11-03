@@ -9,6 +9,8 @@ const onHttpStart = () => {
   console.log("Express http server listening on: " + HTTP_PORT);
 };
 
+app.use(express.static(path.join(__dirname, "/src")));
+
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "/src/home.html"));
 });
