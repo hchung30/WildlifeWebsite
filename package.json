@@ -9,19 +9,18 @@
     "prepare-submission": "run-s -n -c prettier mkdir copy-src zip",
     "prezip": "rimraf submission.zip",
     "zip": "bestzip submission.zip submission/*",
-    "start": "serve"
+    "start": "node server.js"
   },
   "license": "BSD-2-Clause",
   "devDependencies": {
     "bestzip": "^2.1.7",
     "copyfiles": "^2.4.1",
-    "live-server": "^1.2.1",
     "mkdirp": "^1.0.4",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "serve": "^12.0.1"
+    "express": "^4.17.1"
   }
 }
